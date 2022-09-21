@@ -1,0 +1,92 @@
+### 2.4.1
+- Fixed an issue where the PayPal buttons can be displayed multiple times for ajax enabled multipage forms.
+
+
+### 2.4 | 2022-04-19
+- Added the "Display Other Payment Buttons" setting in the form editor to allow rendering buttons for a variety of funding sources, including Venmo.
+- Added the [gform_ppcp_enable_funding](https://docs.gravityforms.com/gform_ppcp_enable_funding/) filter that allows adding custom funding sources.
+- Updated the PayPal field settings to remove the deprecated credit card style setting.
+- Fixed an issue which prevents the PayPal payment button from being displayed when the submit button is a target of conditional logic.
+- Fixed an issue which causes the PayPal payment button to be displayed even when the payment amount is set to 0.
+- Fixed an issue which causes the focus to be removed from user-defined price fields as soon as the user types in the field.
+- Fixed an issue where entries are marked as paid before payments are captured.
+- Fixed an issue which causes the payment method selector to be hidden when there is a subscription feed, even if the active feed is not a subscription.
+- Fixed an issue where the PayPal payment button is not hidden by conditional logic.
+- Fixed an issue where the appearance preview in the editor does not always reflect the appearance on the front end.
+- Fixed an issue where all sandbox transactions are failing the 3D Secure challenge.
+- Fixed an issue where the PayPal button is not displayed on forms with legacy mode enabled.
+
+### 2.3 | 2022-02-02
+- Updated the alert styles.
+- Fixed an issue that causes the smart buttons to appear in the wrong place in the editor in Gravity Forms 2.6.
+- Fixed an issue where orders fail to be processed when the order currency is different than the default Gravity Forms currency.
+- Fixed an issue where smart buttons do not function correctly when a feed is switched between a product and a subscription feed.
+- Fixed a typo in an error message.
+
+### 2.2 | 2021-15-09
+- Added a new setting to the PayPal field's appearance tab to show or hide the [PayPal credit messages](https://www.paypal.com/merchantapps/appcenter/accelerategrowth/paylatermessaging).
+- Fixed an issue that prevents transactions from processing if the product name or description exceeds the character limit.
+- Fixed an issue which causes the Dashboard to break if the PayPal API has a Server Error.
+
+### 2.1 | 2021-05-26
+- Added the [gform_ppcp_discount_total](https://docs.gravityforms.com/gform_ppcp_discount_total/) filter that allows modifying the discount total value before sending it to PayPal.
+- Fixed an issue that prevents forms from submitting properly when enabled with Ajax.
+- Fixed an issue that causes duplicate PayPal smart buttons to appear on multi-page forms using Ajax.
+- Fixed the do not prompt buyer to include a shipping address setting to work correctly with forms configured with a subscription feed.
+- Fixed an issue that causes a notice about misconfigured subscription settings to display in other add-on settings.
+- Fixed an issue where the PayPal credit button incorrectly appears as a payment option for subscriptions.
+- Fixed an issue that causes PayPal Checkout to generate PHP notices when saving feeds for other add-ons.
+- Fixed an issue where the submit button does not display if a PayPal feed is active.
+- Fixed an issue that prevents form editors from creating test submissions in preview with forms that have a subscription feed.
+
+### 2.0 | 2020-04-14
+- Added support for subscriptions.
+- Added support for authorizing a payment and capturing later for products and services.
+- Added a refund button to the entry detail page to allow payments to be refunded in full from Gravity Forms.
+- Added support for setup fees within subscription feeds.
+- Added support for trial periods within subscription feeds.
+- Added logging statements.
+- Updated the name of the add-on from PayPal Commerce Platform to PayPal Checkout.
+- Updated the menu and form editor icons to use Gravity Forms 2.5's font icon set instead of an svg.
+- Updated error messages displayed when insufficient address details are sent to PayPal.
+- Updated error message displayed when PayPal cannot locate an order ID.
+- Updated PayPal payment buttons to abide by conditional logic rules set on the form submit button.
+- Updated the PayPal field appearance tab in the form editor so that smart button previews fully display in horizontal layouts regardless of their selected size.
+- Fixed the PayPal field so it renders when product quantity is disabled in Gravity Forms 2.5+.
+- Fixed some javascript errors that sometimes occur when rendering the PayPal Smart Buttons.
+- Fixed an issue that allows the credit card field to display with a subscription feed if it is the only payment method.
+- Fixed display issues with the PayPal credit card field in the editor when used in combination with the legacy markup setting.
+- Fixed an issue where changes to the Cardholder Name settings in the PayPal field are not being retained on save.
+- Fixed an issue where field settings won't expand in the form editor if the add-on is not connected to PayPal.
+- Fixed an issue that causes form submissions to fail when a product price is calculated using merge tags.
+- Fixed an issue with locating entries by transaction ID when processing some webhook events.
+- Fixed an issue where the credit card field was displaying in multi-page forms when PayPal Checkout is selected as the payment option.
+- Fixed an issue that prevented submissions from processing when a form contains an invisible recaptcha.
+- Fixed a layout issue when using multi-page forms with PayPal Checkout.
+- Fixed the layout of the smart button options in the appearance tab of the PayPal field in Gravity Forms 2.5.
+
+### 1.4 | 2020-09-24
+- Added support for Gravity Forms 2.5.
+- Fixed an issue where order total is not calculated accurately when coupons are applied.
+
+### 1.3 | 2020-08-05
+- Added support for WordPress 5.5.
+- Fixed a JavaScript error thrown in WordPress 5.5.
+- Fixed multiple layout issues with the Smart Payment Buttons on multi-page forms.
+- Fixed an issue where an error message is not displayed when checkout fails.
+
+### 1.2 | 2020-07-15
+- Added security enhancements.
+- Added accessibility enhancements that announcing supported credit cards and card errors to screen readers.
+- Fixed an JS error thrown in forms without any conditional logic field set.
+- Fixed an payment error when pricing fields have conditional logic based on non-pricing fields.
+- Added a warning message that disables the Connect to PayPal button for sites on localhost.
+
+### 1.1 | 2020-05-06
+- Fixed an issue where Euro users cannot submit payments successfully.
+- Fixed Smart Payment Buttons not working with authorize intent orders.
+- Fixed an issue where the PayPal field contains an unclosed span tag in certain PayPal field and form layout configurations.
+- Fixed an issue where newly registered PayPal accounts cannot see their accounts are connected and their status.
+
+### 1.0 | 2020-03-30
+- It's all new!

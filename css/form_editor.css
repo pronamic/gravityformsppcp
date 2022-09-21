@@ -1,0 +1,17 @@
+.toplevel_page_gf_edit_forms #gf-paypal-checkout-unsupported-payment-warning:not(.gform-alert__legacy) {
+	margin-top: 1rem;
+}
+
+.toplevel_page_gf_edit_forms #gf-paypal-checkout-unsupported-payment-warning.gform-settings__wrapper:not(.gform-alert__legacy) {
+	margin: 1rem 0 0 0;
+	padding: 0;
+	width: 70%;
+}
+
+.toplevel_page_gf_edit_forms #gf-paypal-checkout-unsupported-payment-warning.gform-alert__legacy .alert_yellow {
+	padding: 0.5rem 1rem;
+}
+
+li.gform_ppcp_custom_card_fields {
+	display:block;
+}
